@@ -1,0 +1,328 @@
+/* --------------------- Site-wide --------------------- */
+html {
+  line-height: 1.5;
+  font-family: system-ui;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 98vh;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 8px;
+
+  background-color: #282a36;
+  color: #f8f8f2;
+  /* border: 1px solid red; */
+}
+
+main {
+  margin: 0px;
+  border: 1px solid rgb(59, 21, 227);
+}
+
+/* --------------------- Header --------------------- */
+header {
+  border-bottom: 1px solid #6b7280;
+  width: 100%;
+  flex-direction: column;
+  padding: 12px 0px;
+}
+
+h3.title {
+  font-family: "Fira Mono", monospace;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  margin: auto;
+}
+
+a.title {
+  color: white;
+}
+
+.header-bottom {
+  display: flex;
+  width: 100%;
+}
+
+.header-bottom > p {
+  margin: 0px;
+  color: #9ca1ab;
+}
+
+nav.icons {
+  margin-left: auto;
+}
+
+ul.icons {
+  margin: 0;
+  padding: 0;
+}
+
+li.icons {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+a.icon {
+  color: #9ca1ab;
+}
+
+/* --------------------- Nav bar --------------------- */
+nav.main-menu {
+  padding: 15px 0px 30px 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+ul.nav-list {
+  margin: 0;
+  padding: 0;
+  /* list-style-type: none; */
+}
+
+li.nav-item {
+  /* border: 1px solid red; */
+  margin: 0px 20px 0px 0px;
+  display: inline-block;
+}
+
+/* ------------------- END Nav bar ------------------- */
+
+section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin-bottom: 30px;
+}
+
+.post {
+  display: flex;
+  column-gap: 15px;
+}
+.date {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4% 0 4%;
+  margin-top: -15px;
+}
+.date-dd {
+  font-size: 60px;
+  color: #6b7280;
+  font-weight: 600;
+  margin-bottom: -12px;
+}
+.date-mm-yy {
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+.post-text {
+  justify-content: flex-start;
+}
+.post-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px 0px 10px;
+}
+
+.post-preview {
+  font-size: 18px;
+  margin: 0px 0px 0px;
+}
+
+.all-posts {
+  float: right;
+  /* margin-left: auto; */
+}
+
+a {
+  color: #ffb86c;
+  text-decoration: none;
+}
+
+/* Article Page */
+
+div.article {
+  max-width: 540px;
+  margin: auto;
+  color: #f8f8f2;
+}
+
+.metadata-article {
+  display: flex;
+  column-gap: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+h1.title-article {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffb86c;
+}
+
+img.author {
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+p.footer {
+  margin-bottom: 0px;
+}
+
+/* *,
+:before,
+:after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+} */
+
+/* .flex-1 {
+  flex: 1 1 0%;
+} */
+
+/* Highlight.js styling */
+
+pre {
+  display: block;
+  border-radius: 10px;
+  /* background: #2b2b2d; */
+  color: #cbd1d6;
+  background: #22212d;
+  /* color: white; */
+  padding: 20px;
+  /* margin: 15px; */
+  font-family: "Fira Mono", monospace;
+  font-size: 14px;
+}
+
+code {
+  background: #22212d;
+  font-family: "Fira Mono", monospace;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  background: #2b2b2d;
+  color: #cdd3d8;
+  font-family: "Fira Mono", monospace;
+  font-size: 1em;
+}
+.hljs > *::selection {
+  background-color: #3e4451;
+}
+
+.hljs-comment {
+  color: #656565;
+  font-style: italic;
+}
+
+.hljs-selector-tag {
+  color: #c792ea;
+}
+
+.hljs-string,
+.hljs-subst {
+  color: #c3e88d;
+}
+
+.hljs-number,
+.hljs-regexp,
+.hljs-variable,
+.hljs-template-variable {
+  color: #f77669;
+}
+
+.hljs-keyword {
+  color: #c792ea;
+}
+.hljs-function > .hljs-title {
+  color: #75a5ff;
+}
+.hljs-tag {
+  color: #abb2bf;
+}
+.hljs-name {
+  color: #e06c75;
+}
+.hljs-type {
+  color: #da4939;
+}
+
+.hljs-attribute {
+  color: #80cbbf;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-link {
+  color: #c792ea;
+}
+
+.hljs-params {
+  color: #eefff7;
+}
+
+.hljs-meta {
+  color: #75a5ff;
+}
+
+.hljs-title {
+  color: #75a5ff;
+}
+
+.hljs-section {
+  color: #ffc66d;
+}
+
+.hljs-addition {
+  background-color: #144212;
+  color: #e6e1dc;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-deletion {
+  background-color: #600;
+  color: #e6e1dc;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-selector-class {
+  color: #ffcb68;
+}
+
+.hljs-selector-id {
+  color: #f77669;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+/* End Highlight.js styling */

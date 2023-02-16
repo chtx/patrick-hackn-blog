@@ -1,0 +1,29 @@
+{
+  "name": "patrick-hackn-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chtx/patrick-hackn-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/chtx/patrick-hackn-blog/issues"
+  },
+  "homepage": "https://github.com/chtx/patrick-hackn-blog#readme",
+  "dependencies": {
+    "glob": "^8.1.0",
+    "gray-matter": "^4.0.3",
+    "highlight.js": "^11.7.0",
+    "marked": "^4.2.12",
+    "mkdirp": "^2.1.3"
+  }
+}
