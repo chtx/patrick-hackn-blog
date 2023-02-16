@@ -10,7 +10,7 @@ body {
   min-height: 98vh;
   max-width: 900px;
   margin: auto;
-  padding-top: 8px;
+  padding: 25px;
 
   background-color: #282a36;
   color: #f8f8f2;
@@ -143,10 +143,10 @@ a {
   text-decoration: none;
 }
 
-/* Article Page */
+/* ------------------- Article Page ------------------- */
 
 div.article {
-  max-width: 540px;
+  max-width: 650px;
   margin: auto;
   color: #f8f8f2;
 }
@@ -179,19 +179,6 @@ footer {
 p.footer {
   margin-bottom: 0px;
 }
-
-/* *,
-:before,
-:after {
-  box-sizing: border-box;
-  border-width: 0;
-  border-style: solid;
-  border-color: #e5e7eb;
-} */
-
-/* .flex-1 {
-  flex: 1 1 0%;
-} */
 
 /* Highlight.js styling */
 
