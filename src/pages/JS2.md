@@ -58,7 +58,7 @@ Comparison:
 
 ```js
 let x;
-x = 5 + '5'; -- // this will coerce the the number into string
+x = 5 + "5";
 ```
 
 ## Working with Strings
