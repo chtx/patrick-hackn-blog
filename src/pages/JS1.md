@@ -1,7 +1,7 @@
 ---
 title: First Hacker Article
 author: Patrick P
-date: 15-Aug-2020
+date: 15-Feb-2023
 preview: This is my first blog post
 ---
 
