@@ -110,13 +110,16 @@ section {
 }
 .date-dd {
   font-size: 60px;
+  text-align: center;
   color: #6b7280;
   font-weight: 600;
   margin-bottom: -12px;
 }
 .date-mm-yy {
   font-size: 16px;
+  text-align: center;
   color: #9ca3af;
+  white-space: nowrap;
 }
 
 .post-text {
@@ -145,10 +148,20 @@ a {
 
 /* ------------------- Article Page ------------------- */
 
+h1.title-article {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffb86c;
+}
+
 div.article {
   max-width: 650px;
   margin: auto;
   color: #f8f8f2;
+}
+
+.content-article {
+  font-size: 18px;
 }
 
 .metadata-article {
@@ -156,12 +169,7 @@ div.article {
   column-gap: 10px;
   font-size: 16px;
   font-weight: lighter;
-}
-
-h1.title-article {
-  font-size: 48px;
-  font-weight: bold;
-  color: #ffb86c;
+  margin-bottom: 30px;
 }
 
 img.author {
@@ -192,12 +200,17 @@ pre {
   padding: 20px;
   /* margin: 15px; */
   font-family: "Fira Mono", monospace;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 code {
   background: #22212d;
   font-family: "Fira Mono", monospace;
+}
+
+:not(pre) > code {
+  color: #acadad;
+  font-size: 17px;
 }
 
 .hljs {

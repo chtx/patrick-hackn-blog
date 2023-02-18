@@ -1,7 +1,7 @@
 ---
-title: Fetch API: Error Handling & Request Timeout
-date: 18-Feb-2023
-preview: Overview of the fetch() method, how to catch errors, and timeout the request if a website is unresponsive.
+title: "Fetch API: Error Handling & Request Timeout"
+date: 15-Feb-2023
+preview: "Overview of the fetch() method, how to catch errors, and timeout the request if a website is unresponsive."
 ---
 
 Fetch API provides a global `fetch()` method that allows easily fetch resources asynchronously from the web. 
