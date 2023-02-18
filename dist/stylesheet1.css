@@ -192,13 +192,11 @@ p.footer {
 
 pre {
   display: block;
+  white-space: pre-wrap;
   border-radius: 10px;
-  /* background: #2b2b2d; */
   color: #cbd1d6;
   background: #22212d;
-  /* color: white; */
   padding: 20px;
-  /* margin: 15px; */
   font-family: "Fira Mono", monospace;
   font-size: 15px;
 }
