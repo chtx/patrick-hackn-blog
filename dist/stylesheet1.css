@@ -190,6 +190,28 @@ p.footer {
 
 /* Highlight.js styling */
 
+.copy-button {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#svg-copy-button path {
+  fill: white;
+}
+
+#svg-checkmark-button path {
+  stroke: greenyellow;
+}
+
+.svg-hidden {
+  display: none;
+}
+
 pre {
   display: block;
   white-space: pre-wrap;
@@ -199,6 +221,7 @@ pre {
   padding: 20px;
   font-family: "Fira Mono", monospace;
   font-size: 15px;
+  position: relative;
 }
 
 code {

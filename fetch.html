@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>patrickHackn</title>
+    <link rel="stylesheet" href="stylesheet1.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- <main> -->
+    <!-- Header -->
+    <header>
+      <!-- Left Side -->
+      <!-- <div class="header-main"> -->
+      <h3 class="title"><a class="title" href="/">patrickHackn</a></h3>
+      <div class="header-bottom">
+        <p>Patrick's hackin' journey</p>
+
+        <!-- Right side icons -->
+        <nav class="icons">
+          <ul class="icons">
+            <li class="icons">
+              <a class="icon" href="" title="Search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.2071 4.89344C19.0923 7.77862 19.3131 12.3193 16.8693 15.4578C16.8846 15.4713 16.8996 15.4854 16.9143 15.5L21.1569 19.7427C21.5474 20.1332 21.5474 20.7664 21.1569 21.1569C20.7664 21.5474 20.1332 21.5474 19.7427 21.1569L15.5 16.9143C15.4854 16.8996 15.4713 16.8846 15.4578 16.8693C12.3193 19.3131 7.77862 19.0923 4.89344 16.2071C1.76924 13.083 1.76924 8.01763 4.89344 4.89344C8.01763 1.76924 13.083 1.76924 16.2071 4.89344ZM14.7929 14.7929C17.1361 12.4498 17.1361 8.6508 14.7929 6.30765C12.4498 3.96451 8.6508 3.96451 6.30765 6.30765C3.96451 8.6508 3.96451 12.4498 6.30765 14.7929C8.6508 17.1361 12.4498 17.1361 14.7929 14.7929Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="icons">
+              <a class="icon" href="https://github.com/chtx" title="Github URL">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- </div> -->
+    </header>
+
+    <!-- Nav Bar -->
+    <nav class="main-menu">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="/">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="">Tags</a>
+        </li>
+        <li class="nav-item">
+          <a href="">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Post Container -->
+    <div class="article">
+      <h1 class="title-article">Fetch API: Error Handling & Request Timeout</h1>
+      <div class="metadata-article">
+        <img src="pat-min.jpg" alt="Patrick's photo" class="author" />
+        <span class="author-name">Patrick Purchalka</span>
+        <span class="separator">/</span>
+        <span class="publish-date">15-Feb-2023</span>
+      </div>
+
+      <div class="content-article">
+        <p>
+          Fetch API provides a global <code>fetch()</code> method that allows
+          easily fetch resources asynchronously from the web.
+        </p>
+        <p>
+          The method returns a promise which is fulfilled once the response is
+          available.
+        </p>
+        <p>
+          The promise resolves to the <code>Response</code> object representing
+          the response to your request.
+        </p>
+        <div id="icon">
+          <svg width="16" height="16">
+            <use href="#svg-copy-button"></use>
+          </svg>
+        </div>
+
+        <div id="icon">
+          <svg width="16" height="16">
+            <use href="#svg-checkmark-button"></use>
+          </svg>
+        </div>
+
+        <p>Basic usage:</p>
+        <pre><button class="copy-button" id="icon"><svg viewBox="0 0 16 16" width="16" height="16">
+          <path 
+            d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"
+          ></path>
+          <path 
+            d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"
+          ></path>
+        </svg></button><code class="language-js"><span class="hljs-title function_">fetch</span>(url)
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">response</span>) =&gt;</span> response.<span class="hljs-title function_">json</span>())
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data));
+</code></pre>
+        <p>
+          <code>json()</code> is a method on the <code>Response</code> object.
+          Returns a promise which resolves with the result of parsing the body
+          text as JSON. It doesn&#39;t take parameters.
+          <code>data</code> therefore is an object containing JSON data.
+        </p>
+        <p>
+          Another common method is <code>text()</code> which returns a promise
+          that resolves with a text representation of the response body.
+        </p>
+        <h2 id="error-handling">Error Handling:</h2>
+        <p>
+          To avoid the program from stopping due to errors, we need to add error
+          handling.
+        </p>
+        <p>
+          The Promise returned from <code>fetch()</code> will be rejected only
+          when a network error occurs. HTTP errors like 404 or 500 will resolve
+          normally.
+        </p>
+        <p>
+          To catch them we can use an <code>ok</code> property (Boolean) on the
+          <code>Response</code> object. It is set to <code>false</code> if the
+          response isn&#39;t in the range 200–299.
+        </p>
+        <p>Other errors we can catch with the <code>catch()</code> method:</p>
+        <pre><code class="language-js"><span class="hljs-title function_">fetch</span>(url)
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">response</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span> (!response.<span class="hljs-property">ok</span>) {
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&quot;Network response was not OK&quot;</span>);
+    }
+    <span class="hljs-keyword">return</span> response.<span class="hljs-title function_">json</span>();
+  })
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> {
+    <span class="hljs-comment">// Do something with the data object</span>
+  })
+  .<span class="hljs-title function_">catch</span>(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&quot;Problem with fetch operation:&quot;</span>, err);
+  });
+</code></pre>
+        <p>
+          The same can be achieved using the <code>await</code> keyword along
+          with <code>try...catch</code> statement:
+        </p>
+        <pre><code class="language-js">(<span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(url);
+    <span class="hljs-keyword">if</span> (!response.<span class="hljs-property">ok</span>) {
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&quot;Network response was not OK&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+      <span class="hljs-comment">//do something with the data object</span>
+    }
+  } <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&quot;Problem with fetch operation:&quot;</span>, err);
+  }
+})();
+</code></pre>
+        <h2 id="request-timeout">Request Timeout:</h2>
+        <p>
+          In certain cases, websites may become unresponsive and in such
+          situations, utilizing a request timeout can be quite helpful.
+        </p>
+        <p>
+          The easiest way to achieve that is by using the
+          <code>timeout()</code> method on <code>AbortSignal</code> object and
+          passing it as an argument to the <code>fetch()</code> method:
+        </p>
+        <pre><code class="language-js">{ <span class="hljs-attr">signal</span>: <span class="hljs-title class_">AbortSignal</span>.<span class="hljs-title function_">timeout</span>(<span class="hljs-number">5000</span>) }
+</code></pre>
+        <p>
+          This method will abort the request after a specified time (in
+          milliseconds) has elapsed, and return a
+          <code>TimeoutError</code> error, that we can also catch:
+        </p>
+        <pre><code class="language-js"><span class="hljs-title function_">fetch</span>(url, { <span class="hljs-attr">signal</span>: <span class="hljs-title class_">AbortSignal</span>.<span class="hljs-title function_">timeout</span>(<span class="hljs-number">5000</span>) })
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">response</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span> (!response.<span class="hljs-property">ok</span>) {
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&quot;Network response was not OK&quot;</span>);
+    }
+    <span class="hljs-keyword">return</span> response.<span class="hljs-title function_">json</span>();
+  })
+  .<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> {
+    <span class="hljs-comment">// Do something with the data object</span>
+  })
+  .<span class="hljs-title function_">catch</span>(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span> (err.<span class="hljs-property">name</span> === <span class="hljs-string">&quot;TimeoutError&quot;</span>) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&quot;The request was timed out.&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">`Error: type: <span class="hljs-subst">${err.name}</span>, message: <span class="hljs-subst">${err.message}</span>`</span>);
+    }
+  });
+</code></pre>
+        <p>And again, the same thing using the <code>await</code> keyword:</p>
+        <pre><code class="language-js">(<span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(url, { <span class="hljs-attr">signal</span>: <span class="hljs-title class_">AbortSignal</span>.<span class="hljs-title function_">timeout</span>(<span class="hljs-number">5000</span>) });
+    <span class="hljs-keyword">if</span> (!response.<span class="hljs-property">ok</span>) {
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&quot;Network response was not OK&quot;</span>);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+      <span class="hljs-comment">//do something with the data object</span>
+    }
+  } <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-keyword">if</span> (err.<span class="hljs-property">name</span> === <span class="hljs-string">&quot;TimeoutError&quot;</span>)
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&quot;The request was timed out.&quot;</span>);
+    <span class="hljs-keyword">else</span> 
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">`Error: type: <span class="hljs-subst">${err.name}</span>, message: <span class="hljs-subst">${err.message}</span>`</span>);
+  }
+})();
+</code></pre>
+        <p>Happy fetching!</p>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <p class="footer">2023 © Copyright notice | Pat</p>
+      </div>
+    </footer>
+    <!-- </main> -->
+  </body>
+</html>
