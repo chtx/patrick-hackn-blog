@@ -151,5 +151,3 @@ buildIndexPage();
 // Separate out header & footer into its own templates and then build using them.
 
 // images - just copy from src to dist
-
-//create folders for posts to not have .html extension
