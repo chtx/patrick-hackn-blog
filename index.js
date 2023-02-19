@@ -47,9 +47,17 @@ const readFile = (fileName) => {
       return hljs.highlight(code, { language }).value;
     },
   });
-  const html = marked.parse(parsed.content);
+  const html = addIconsToCodeBlocks(marked.parse(parsed.content));
+
+  //const htmlReady = addIconsToCodeBlocks(html);
 
   return { ...parsed, html };
+};
+
+const addIconsToCodeBlocks = (html) => {
+  const iconHtmlSnippet =
+    '<pre><button id="icon" class="copy-button"><svg width="16" height="16"><use class="visible" href="#svg-copy-button"></use></svg></button>';
+  return html.replace(/<pre>/g, iconHtmlSnippet);
 };
 
 const processFile = (fileName, template, outPath) => {
